@@ -1,1 +1,1 @@
-# terraform-vpc-template
+# terraform-aws-vpc
