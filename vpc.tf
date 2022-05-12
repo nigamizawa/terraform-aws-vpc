@@ -23,7 +23,7 @@ resource "aws_internet_gateway" "main" {
 }
 
 # If `aws_default_security_group` is not defined, it will be created implicitly with access `0.0.0.0/0`
-resource "aws_default_security_group" "default" {
+resource "aws_default_security_group" "main" {
   count = var.enable_default_security_group ? 1 : 0
 
   vpc_id = aws_vpc.main.id
